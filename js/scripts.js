@@ -1,3 +1,6 @@
+alert('Hello World');
+let favouriteFood='Biryani';
+document.write(favouriteFood);
 let myName='Bob';
 document.write(myName);
 myName='john doe';
