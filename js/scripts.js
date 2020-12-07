@@ -1,30 +1,30 @@
-let indianRecipesList = [{
-    name: 'Biryani',
-    mainIngredients: ['meat', 'rice'],
-    calories: 350
+let pokemonList = [{
+    name: 'Balbasaur',
+    types: ['grass', 'poison'],
+    height: 0.7
   },
   {
-    name: 'Roti',
-    mainIngredients: ['flour', 'water', 'salt'],
-    calories: 250
+    name: 'Pidgeottlo',
+    types: ['flying','normal'],
+    height: 1.6
   },
   {
-    name: 'Bonda',
-    mainIngredients: ['flour', 'oil', 'onion'],
-    calories: 270
+    name: 'Slowpoke',
+    types: ['psychic', 'water'],
+    height: 1.2
   },
   {
-    name: 'Panner fry',
-    mainIngredients: ['panner', 'pepper', 'masala'],
-    calories: 300
+    name: 'Yamma',
+    types: ['bug', 'flying'],
+    height: 1.2
 
   }
 ];
-for (let i = 0; i < indianRecipesList.length; i++) {
-  if (indianRecipesList[i].calories > 300) {
-    document.write(indianRecipesList[i].name + ' (calories: ' + indianRecipesList[i].calories + ')' + ' - More calories!')
+for (let i = 0; i < pokemonList.length; i++) {
+  if (pokemonList[i].height > 1.5) {
+    document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')' + ' - wowww this is big one!')
   } else {
-    document.write(indianRecipesList[i].name + ' (calories: ' + indianRecipesList[i].calories + ')')
+    document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')')
   }
   document.write("<br/>", "<br/>");
 }
