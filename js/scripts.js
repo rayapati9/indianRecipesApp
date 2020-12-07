@@ -11,7 +11,7 @@ let indianRecipesList = [{
   {
     name: 'Bonda',
     mainIngredients: ['flour', 'oil', 'onion'],
-    calories: 350
+    calories: 270
   },
   {
     name: 'Panner fry',
@@ -20,4 +20,11 @@ let indianRecipesList = [{
 
   }
 ];
-document.write(indianRecipesList[1].name);
+for (let i = 0; i < indianRecipesList.length; i++) {
+  if (indianRecipesList[i].calories > 300) {
+    document.write(indianRecipesList[i].name + ' (calories: ' + indianRecipesList[i].calories + ')' + ' - More calories!')
+  } else {
+    document.write(indianRecipesList[i].name + ' (calories: ' + indianRecipesList[i].calories + ')')
+  }
+  document.write("<br/>", "<br/>");
+}
