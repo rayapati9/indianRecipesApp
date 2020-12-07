@@ -1,0 +1,15 @@
+body {
+  background-color: #fcf8ec;
+  color: #583d72;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+img {
+  border-radius: 50%;
+}
+
+h1 {
+  color: #120078;
+  background-color: inherit;
+}
