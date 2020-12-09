@@ -20,11 +20,13 @@ let pokemonList = [{
 
   }
 ];
-for (let i = 0; i < pokemonList.length; i++) {
-  if (pokemonList[i].height > 1.5) {
-    document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')' + ' - wowww this is big one!')
-  } else {
-    document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')')
-  }
-  document.write("<br/>", "<br/>");
+
+pokemonList.forEach(function(user){
+  if (user.height> 1.5){
+  document.write(user.name+' (Height:' + user.height +' - wowww this is big one!'+'</br>')
 }
+else{
+  document.write(user.name + ' (Height: ' + user.height + ')'+'<br/>')
+
+}
+});
