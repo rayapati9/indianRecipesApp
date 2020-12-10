@@ -1,15 +1,12 @@
-body {
-  background-color: #fcf8ec;
-  color: #583d72;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-img {
-  border-radius: 50%;
-}
-
-h1 {
-  color: #120078;
-  background-color: inherit;
+.selected{
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid green;
 }
