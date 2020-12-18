@@ -1,4 +1,4 @@
-.button-class {
+.btn {
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -6,105 +6,78 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: white;
   color: black;
   border: 2px solid green;
-  background-color: #e6e6e6
+  background-color: #e6e6e6;
+  border-radius: 4px;
+  width: 250px;
 }
 
-.button-class:hover {
+.btn:hover {
   background-color: yellow;
   cursor: pointer;
-}
-
-li {
-  list-style: none;
-  display: block;
+  color: black;
 }
 
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
 }
 
-#pokemon-container {
-  display: none;
-}
-
-#pokemon-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  overflow: auto;
-  display: block;
-  text-align: center;
-}
-
-.pokemon-class {
-  margin: auto;
-  display: inline-block;
+.list-group {
   box-sizing: border-box;
   background: #fff;
-  padding: 15px;
-  width: 100%;
+  color: black;
   max-width: 700px;
-  text-align: left;
-}
-
-.button-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 2px solid;
-  color: #777;
-}
-
-.button-close:hover {
-  background-color: #ec524b;
-}
-
-.modal-image {
-  display: block;
+  border-radius: 10%;
+  list-style: none;
+  display: table;
+  /* Required for table-cell to work on li's */
+  padding: 0;
+  /* Override defaults for lists */
   margin: 0 auto;
-  width: 200px;
-  height: 200px;
+  /* Override defaults for lists */
+  width: 100%;
+  /* Get the row full width */
+  text-align: center;
 }
 
-.pokemon-class h1 {
-  font-size: 50px;
-  width: 50%;
-  margin-top: 0;
-  color: #21209c;
+.group-list-item {
+  display: block;
+  /* Get all images to show in a row */
+  text-align: center;
+  /* Centre align the images */
+  margin: 10px 10px;
 }
 
-.pokemon-class p {
-  margin-bottom: 0;
+.height {
+  float: right;
+  padding-right: 50px;
+  /* aligning height on the left side of modal */
+  padding-top: 60px;
   font-size: 30px;
-  width: 50%;
-  color: #fd3a69;
 }
 
-@media all and (max-width: 750px) {
-  .pokemon-class h1 {
-    font-size: 40px;
-  }
-
-  .pokemon-class p {
-    font-size: 25px;
-  }
+.imagesize {
+  width: 200px;
+  /*adjusting image width on modal */
 }
 
-@media all and (max-width: 350px) {
-  .pokemon-class h1 {
-    font-size: 25px;
+@media (max-width: 960px) and (min-width: 501px) {
+  .group-list-item {
+    width: 50%;
   }
 
-  .pokemon-class p {
-    font-size: 15px;
+  /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
+}
+
+@media (max-width: 500px) {
+  .group-list-item {
+    width: 90%;
   }
+
+  /* On small screens, show one logo per row */
+}
+
+.navbar-brand {
+  margin: 0 auto;
 }
