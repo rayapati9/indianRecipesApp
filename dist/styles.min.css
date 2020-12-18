@@ -6,76 +6,57 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  color: black;
+  color: #000;
   border: 2px solid green;
   background-color: #e6e6e6;
   border-radius: 4px;
   width: 250px;
 }
-
 .btn:hover {
-  background-color: yellow;
+  background-color: #ff0;
   cursor: pointer;
-  color: black;
+  color: #000;
 }
-
 body {
   font-family: Arial, sans-serif;
 }
-
 .list-group {
   box-sizing: border-box;
   background: #fff;
-  color: black;
+  color: #000;
   max-width: 700px;
   border-radius: 10%;
   list-style: none;
   display: table;
-  /* Required for table-cell to work on li's */
   padding: 0;
-  /* Override defaults for lists */
   margin: 0 auto;
-  /* Override defaults for lists */
   width: 100%;
-  /* Get the row full width */
   text-align: center;
 }
-
 .group-list-item {
   display: block;
-  /* Get all images to show in a row */
   text-align: center;
-  /* Centre align the images */
   margin: 10px 10px;
 }
-
 .height {
   float: right;
   padding-right: 50px;
-  /* aligning height on the left side of modal */
   padding-top: 60px;
   font-size: 30px;
 }
-
 .imagesize {
   width: 200px;
-  /*adjusting image width on modal */
 }
-
 @media (max-width: 960px) and (min-width: 501px) {
   .group-list-item {
     width: 50%;
   }
-
-  /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
 }
-
 @media (max-width: 500px) {
   .group-list-item {
     width: 90%;
   }
 }
-
 .navbar-brand {
   margin: 0 auto;
 }
