@@ -11,11 +11,6 @@ The API used for this project is the [Pokémon API](https://pokeapi.co/).
 
 Allows users to see a list of select Pokemon from JSON list.
 
-### Future Features
-
-- Contact Form Validation
-- About section
-
 ### Author
 
 [Divya Rayapati](https://rayapati9.github.io/portfolio-website/)
